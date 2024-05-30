@@ -1,0 +1,24 @@
+.navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $secundary-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    .title__home{
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+    a{
+        font-size: $font-size-md;
+        color: #fff;
+        text-decoration: none;
+        margin: 20px;
+        &:hover{
+            color: $typography-link-hover;
+        }
+    }
+}

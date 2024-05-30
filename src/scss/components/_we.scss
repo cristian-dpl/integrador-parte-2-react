@@ -1,0 +1,26 @@
+
+.we-section{
+    width: 100%;
+    .title-container{
+        width: 100%;
+        max-width: 1000px;
+        margin: 5% 20px 20px 20px;
+         h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #0f0f0f;
+            border-bottom: 1px solid #131414;
+          }
+    }
+    
+    .paragraph-container{
+        width: 45%;
+        margin: 20px;
+        background-color: #eaf4f4a1;
+        padding: 10px;
+        border-radius: 6px;
+        p{
+            text-align: justify;
+        }
+    }
+}
