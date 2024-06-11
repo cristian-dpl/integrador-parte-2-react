@@ -3,7 +3,7 @@ export const Card = ({
   id,
   name,
   brand,
-  img,
+  imgUrl,
   category,
   shortDesc,
   delivery,
@@ -11,7 +11,7 @@ export const Card = ({
 }) => {
   return (
     <div className="card__container">
-      <img src={img} alt="" />
+      <img src={imgUrl} alt="" />
       <div className="cart__data-wrapper">
         <h2>{name} <span>( {brand})</span> </h2>
         <p>{category}</p>
@@ -26,7 +26,7 @@ export const Card = ({
           movieData={{
             name,
             brand,
-            img,
+            imgUrl,
             category,
           }}
           />

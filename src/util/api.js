@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "https://6650c9b320f4f4c442761e2d.mockapi.io/api/"
+    baseURL: "http://localhost:3001/api/"
 });
 
 export const getProducts = async () => {
-    const resp = await axiosInstance.get('/articles')
+    const resp = await axiosInstance.get('/products')
     return resp.data;
 }
 
@@ -15,6 +15,15 @@ export const postMessage = async body => {
 }
 
 export const postProducts = async body => {
-    const resp = await axiosInstance.post('/articles', body)
+    const formData = new FormData()
+    Object.entries(body).forEach(([key, value]) =>{
+        formData.append(key, value)
+
+    })
+    const resp = await axiosInstance.post('/products', formData, {
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        }
+    })
     return resp.data
 }

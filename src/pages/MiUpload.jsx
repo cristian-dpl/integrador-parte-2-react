@@ -14,7 +14,6 @@ const INITIAL_STATE = {
   delivery: "",
   egeFrom: 0,
   egeTo: 0,
-  img: "https://i.ebayimg.com/thumbs/images/g/D~cAAOSwZd1l~wBI/s-l1200.jpg"
 
 
 
@@ -73,9 +72,10 @@ export const MiUpload = () => {
       validation: validateAgeTo
     },
 
-    img: {
+    image: {
       inputLabel: "Foto del producto",
-      inputType: "file"
+      inputType: "file",
+      accept: "image/png, image/gif, image/jpeg"
     } 
   }
 
