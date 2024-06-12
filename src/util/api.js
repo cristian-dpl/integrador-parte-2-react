@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    // baseURL: "http://localhost:3001/api/"
-    baseURL: "https://integrador-parte3-node-3.onrender.com"
+    baseURL: "http://localhost:3001/api/"
 });
 
 export const getProducts = async () => {
